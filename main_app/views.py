@@ -41,7 +41,7 @@ def unassoc_toy(request, pokemon_id, toy_id):
 
 class PokemonCreate(CreateView):
   model = Pokemon
-  fields = '__all__'
+  fields = ['name', 'element', 'description', 'age']
   success_url = '/pokemons/'
 
 class PokemonUpdate(UpdateView):
